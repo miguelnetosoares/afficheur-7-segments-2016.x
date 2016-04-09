@@ -1,0 +1,19 @@
+_initialiseUART1: CODE, 2972 0 20
+__stringdata: SMALLCONST, 1547 0 237
+_afficheurEtablitDigits: CODE, 3046 0 2
+_putch: CODE, 3020 0 12
+_dpowers: SMALLCONST, 1537 0 10
+_testAfficheAuMaximum99: CODE, 2520 0 150
+_main: CODE, 2992 0 14
+_testAfficheDe10A99: CODE, 2370 0 150
+_initialiseTests: CODE, 2924 0 26
+_finaliseTests: CODE, 2950 0 22
+__initialization: CODE, 2874 0 40
+___lwdiv: CODE, 2670 0 82
+_printf: CODE, 1786 0 434
+___lwmod: CODE, 2752 0 66
+_testAffichePasDeZeroAGauche: CODE, 2220 0 150
+_digit: CODE, 3042 0 4
+_testAfficheur: CODE, 3006 0 14
+_testeEgaliteEntiers: CODE, 2818 0 56
+Total: 1489
