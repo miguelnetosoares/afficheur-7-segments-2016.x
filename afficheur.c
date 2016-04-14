@@ -8,7 +8,11 @@ static unsigned char digits[2];
 static char ascii7Segments[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7F, 0x6F};
 
 void afficheurEtablitDigits(char nombre) {
-    // À implémenter...
+    char d1,d2;
+    d1 = nombre / 10; // dizaine
+    d2 = nombre % 10; // unité
+    digit[0] = d1; // dizaine
+    digit[1] = d2; // unité
 }
 
 unsigned char digit(unsigned char position) {
