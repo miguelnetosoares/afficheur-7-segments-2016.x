@@ -9,11 +9,23 @@ static char ascii7Segments[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 
 
 void afficheurEtablitDigits(char nombre) {
     // À implémenter...
+    char d1, d2;
+    d1=nombre/10;
+    d2=nombre%10;
+    digits[0]=d1;
+    digits[1]=d2;
 }
 
 unsigned char digit(unsigned char position) {
     // À implémenter...
-    return 0;
+    // Fernando
+   
+   if (position == 0){ 
+    return (ascii7Segments[digits[0]]);
+   }
+    if (position == 1){
+        return (ascii7Segments[digits[1]]);
+    }
 }
 
 
