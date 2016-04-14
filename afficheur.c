@@ -14,6 +14,11 @@ void afficheurEtablitDigits(char nombre) {
     d2=nombre%10;
     digits[0]=d1;
     digits[1]=d2;
+    char d1,d2;
+    d1 = nombre / 10; // dizaine
+    d2 = nombre % 10; // unité
+    digit[0] = d1; // dizaine
+    digit[1] = d2; // unité
 }
 
 unsigned char digit(unsigned char position) {
