@@ -9,26 +9,31 @@ static char ascii7Segments[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 
 
 void afficheurEtablitDigits(char nombre) {
     // À implémenter...
+    
     char d1, d2;
-    d1=nombre/10;
-    d2=nombre%10;
-    digits[0]=d1;
-    digits[1]=d2;
-    char d1,d2;
-    d1 = nombre / 10; // dizaine
-    d2 = nombre % 10; // unité
-    digit[0] = d1; // dizaine
-    digit[1] = d2; // unité
+    
+    if(nombre>99){      // Test si la valeur dépace 99
+        digits [0]=9;
+        digits [1]=9;
+    }
+    else {     
+        d1 = nombre / 10; // dizaine
+        d2 = nombre % 10; // unité
+        digits[0] = d1; // dizaine
+        digits[1] = d2; // unité
+    }
 }
 
 unsigned char digit(unsigned char position) {
     // À implémenter...
-    // Fernando
-   
-   if (position == 0){ 
-    return (ascii7Segments[digits[0]]);
-   }
-    if (position == 1){
+    
+    if (position == 0 && digits[0]==0){ 
+        return (0);
+    }
+    else if (position == 0){
+        return (ascii7Segments[digits[0]]);
+    }
+   else {
         return (ascii7Segments[digits[1]]);
     }
 }

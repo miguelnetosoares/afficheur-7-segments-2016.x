@@ -19,7 +19,7 @@
 void low_priority interrupt bassePriorite() {
     static char n = 0;
     if (PIR1bits.TMR1IF) {
-        TMR1 = 60535;
+        TMR1 = 60535;       
         PIR1bits.TMR1IF = 0;
         PORTA = digit(n);
         switch(n) {
